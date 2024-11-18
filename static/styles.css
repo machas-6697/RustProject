@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Disable horizontal scrollbar */
+}
+
+/* Background and Border */
+.border-container {
+  background-color: #bee9ff;
+  border: 20px solid #006294;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure it covers full viewport height */
+  width: calc(100% - 40px); /* Account for 20px border on both sides */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Heading Styling */
+h1 {
+  color: #006294;
+  margin: 90px auto;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* Button Styling */
+.upload-button {
+  background-color: #cbf4fc;
+  border: 3px solid #006294;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #00A9FF;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Div Styling */
+.custom-div {
+  background-color: #cbf4fc;
+  border: 3px solid #006294;
+  border-radius: 15px;
+  width: calc(100% - 130px); /* Adjust width to fit within container */
+  margin: 20px auto;
+  max-width: 80%;
+  padding: 20px;
+
+  /* Set max height and enable vertical scrolling if content exceeds */
+  height: auto;
+  max-height: 70vh; /* Adjust maximum height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+
+  /* Text styling */
+  font-size: 1.2rem;
+  color: #006294;
+  text-align: center;
+
+  /* Flexbox for better alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Remove the "Word Frequencies:" heading if it's present */
+.custom-div h1 {
+  display: none;
+}
+
+/* Styling for individual word-frequency pairs */
+.custom-div p {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #006294; /* Set text color to red */
+}
